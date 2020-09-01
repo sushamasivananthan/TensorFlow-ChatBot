@@ -1,0 +1,103 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "hello", "Is anyone there?","Hey","Hola", "Hello","Hi"],
+         "responses": ["Hello, How are you?", "Hey, I am here,How are you", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "fine",
+         "patterns": ["fine", "I am fine, How are you", "Iam fine","I am okay","I am good", "How are you"],
+         "responses": ["sounds good, I am good too, how can I help", "sounds good, I am good too, how can i help you"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more information", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?","I need a help","I am looking for a help","I am looking for some informations", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through Bharathiyar university frequently asked questions and answers, Please let mw know your question, So I can provide more informations "],
+         "context": [""]
+        },
+        {"tag": "PG_course_admission",
+         "patterns": ["How to join PG?", "admission process for PG course", "Application process for PG admission in bharathiyar university", "admission criteria", "how to apply for MCA/MBA/P.G courses" ],
+         "responses": ["There are two type 1. Admission by Entrance Test  2. Direct Admission. More info can be found at <a href=\"https://www.b-u.ac.in/Home/AdmissionProcedure\">click here</a>"],
+         "context": [""]
+        },
+        {"tag": "Distance_education",
+         "patterns": ["tell about bharathiyar university distance education", "distance education", "what is distance education", "know distance education", "information about distance education" ],
+         "responses": ["The School of Distance Education, Bharathiar University is offering various courses, Further, the candidates who have completed their study under 11 + 1 / 10 + 2 / 10 + 3 (10 + Diploma) alone are eligible for any UG/Diploma courses, 11 + 1 + 3 / 10 + 2 + 3 / 10 + 3 + 3 alone are eligible for any PG/PG Diploma courses offered by SDE. more info is at <a href=\"http://sde.b-u.ac.in/crsoff.aspx\">click here</a>"],
+         "context": [""]
+        },
+        {"tag": "Exam details",
+         "patterns": ["Looking for exams", "Exam time table", "Exam schedule", "bharathiyar university exams"],
+         "responses": ["Please go to <a href=\"https://www.b-u.ac.in/Home/ExamAffCollSchedule\">click here</a>"],
+         "context": ["search_exams"]
+        },
+        {"tag": "certificate",
+         "patterns": ["how to apply certificate", "apply for certificate"],
+         "responses": ["Is it degree or duplicate certicate"],
+         "context_set": "cert"
+        },
+        {"tag": "degree",
+         "patterns": ["degree"],
+         "responses": ["For degree please apply on <a href=\"https://www.b-u.ac.in/Home/DegreeCertificate\">click here</a>"],
+         "context_filter": "cert"
+        },
+        {"tag": "duplicate",
+         "patterns": ["duplicate"],
+         "responses": ["For duplicate please apply on <a href=\"https://www.b-u.ac.in/Home/DuplicateCertificateNew\">click here</a>"],
+         "context_filter": "cert"
+        },
+        {"tag": "exam_results",
+         "patterns": ["exam results", "result", "where can i find exam results", "where to check results", "results" ],
+         "responses": ["The exam results can be found at https://www.b-u.ac.in/Home/ExamResults, find the right category from each tab and enter your register number"],
+         "context": [""]
+        },
+         {"tag": "placement",
+         "patterns": ["bharathiyar university placement", "placement", "job support", "placement traning", "do you provide job after studies or course","how about campus placement" ],
+         "responses": ["The University has an excellent placement record. An exclusive placement wing in the School of Management caters to the requirements of the students and gets them offers, for the companies registered with us please visit <a href=\"https://www.b-u.ac.in/Home/Placement\">click here</a>"],
+         "context": [""]
+        },
+        {"tag": "syllabus",
+         "patterns": ["syllabus", "where can i find syllabus","how to download syllabus"],
+         "responses": ["which one are you looking for ? Affiliated Colleges,M.Phil/Ph.D,Distance Education Syllabus, or University department syllabus"],
+         "context_set": "syllabus"
+        },
+        {"tag": "Affiliated Colleges syllabus",
+         "patterns": ["Affiliated Colleges syllabus"],
+         "responses": ["For Affiliated Colleges syllabus please download from <a href=\"https://www.b-u.ac.in/Home/DeptSyllabus\">click here</a>"],
+         "context_filter": "syllabus"
+        },
+        {"tag": "M.Pihil/Ph.D syllabus",
+         "patterns": ["M.Phil/Ph.D syllabus"],
+         "responses": ["For M.Phil/Ph.D syllabus please <a href=\"https://www.b-u.ac.in/Home/SyllabusSDE\">click here</a>"],
+         "context_filter": "syllabus"
+        },
+        {"tag": "Distance Education Syllabus",
+         "patterns": ["Distance Education Syllabus"],
+         "responses": ["For Distance Education Syllabus please download from <a href=\"https://www.b-u.ac.in/Home/SyllabusSDE\">click here</a>"],
+         "context_filter": "syllabus"
+        },
+        {"tag": "University department Syllabus",
+         "patterns": ["University department Syllabus"],
+         "responses": ["University department Syllabus Syllabus please download from <a href=\"https://www.b-u.ac.in/Home/UniDepts\">click here</a>"],
+         "context_filter": "syllabus"
+        },
+        {"tag": "Entrance Test",
+         "patterns": ["want to know about Entrance Test","How to apply for entrance test","entrance test","can you tell about entrance exam application"],
+         "responses": ["To know more about entrance please click here, <a href=\"http://tiny.cc/entTest\">click here</a>"],
+         "context_filter": "syllabus"
+        }
+   ]
+}

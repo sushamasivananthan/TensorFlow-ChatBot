@@ -1,0 +1,7 @@
+tensorflow==1.15.0
+Django==2.2.5
+Keras==2.3.1
+numpy==1.17.4
+nltk==3.4.5
+tflearn==0.3.2
+pygubu==0.9.8.4
