@@ -4,6 +4,5 @@ This project is focusing on creating a chatbot to be used by students to get the
 Most of the existing chatbots lack empathy and fail to accommodate anything outside of the script. In order to address these problems, the College Enquiry Chatbot extends the implementation of the current chatbots by adding sentiment analysis and active learning. Although, sentimental analysis correctly recognizes the user's query as positive, negative and neutral, the system was partially successful in adding empathy to the chatbot. It is because the system requires more rigorous training data to handle all queries which are off-script. However, for such queries, active learning helps to improve the chatbot performance since it correctly understands the user's questions, asks clarifying question, and then retrains the system to give the response what the user intends to get.
 
 <p align="center">
-  <img src="C:\Users\santh\OneDrive\Desktop\.NLP Chatbot.jpg" width="350" title="hover text">
-  
-</p>
+  <img src="C:\Users\santh\OneDrive\Desktop\NLP Chatbot.jpg" width="350" title="hover text">
+  </p>
